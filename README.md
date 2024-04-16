@@ -10,6 +10,7 @@ This is one of the earliest datasets used in the literature on classification me
 ### Reference
 [Link for Iris data site](https://archive.ics.uci.edu/dataset/53/iris)
 
+### Description
 Number of Instances: 150 (50 in each of three classes)
 Number of Attributes: 4 numeric, predictive attributes and the class
 
@@ -72,6 +73,8 @@ After analysis Itis DataFraim, it was found that the lost data is completely abs
 
 
 
+## Data Analysis
+
 
 
 ## Layout Plot
@@ -84,3 +87,24 @@ After analysis Itis DataFraim, it was found that the lost data is completely abs
 - To develop skills in data preprocessing, feature selection, and the application of unsupervised learning techniques
 - To establish a versatile clustering pipeline applicable to subsequent projects
 
+## References
+
+[Exploratory Data Analysis on Iris Dataset](https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/)
+
+[Exploratory Data Analysis : Iris Dataset](https://medium.com/analytics-vidhya/exploratory-data-analysis-iris-dataset-4df6f045cda)
+
+[Exploratory Data Analysis of Iris Dataset](https://medium.com/@nirajan.acharya666/exploratory-data-analysis-of-iris-dataset-9c0df76771df)
+
+[Python For Data Science – Exploratory Data Analysis – IRIS Dataset](https://notepub.io/notes/programming-languages/python-for-data-science/python-for-data-science-exploratory-data-analysis-iris-dataset/)
+
+[Investigating the Iris dataset](https://www.angela1c.com/projects/iris_project/investigating-the-iris-dataset/)
+
+[Categorical Exploratory Data Analysis: From Multiclass Classification and Response Manifold Analytics Perspectives of Baseball Pitching Dynamics](https://www.mdpi.com/1099-4300/23/7/792)
+
+[Analysis of the famous Iris Flower dataset](https://wnellie.tumblr.com/post/143155937907/analysis-of-the-famous-iris-flower-dataset-part)
+
+[Exploratory Data Analysis of IRIS Data Set Using Python](https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d)
+
+[Discriminating Fisher's iris data by using the petal areas](https://blogs.sas.com/content/iml/2012/08/09/discriminating-fishers-iris-data-by-using-the-petal-areas.html)
+
+[Exploratory Data Analysis: Iris Flower Dataset](https://indeepdata.com/blog/exploratory-data-analysis/)
