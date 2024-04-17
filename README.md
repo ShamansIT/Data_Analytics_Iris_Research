@@ -127,14 +127,53 @@ Create and save histograms for each variable from a known Iris data set.
 The Iris data set contains 150 specimens with 4 characteristics: length and width of sepals, length and width of petals. These data are divided into three classes corresponding to iris types: Setosa, Versicolour and Virginica.
 
 ### Examples 1
-!["Examples 1"](https://github.com/ShamansIT)
+!["Examples 1"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/Petal_width(cm).png?raw=true)
 
 ### Examples 2
-!["Examples 2"](https://github.com/ShamansIT)
+!["Examples 2"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/Sepal_width(cm).png?raw=true)
 
-## Layout Plot
+## Scatter Plots
+Scatter plots based on the Iris dataset help analyze the relationships between the sizes of the flower parts of three species of irises. The following are the main ones that can be explored with the help of these diagrams.
+### Detection Dependencies 
+These charts show how different measurements are related to each other, such as the length and width of the petals. The linear alignment of the dots on the chart indicates a strong correlation between these characteristics.
+### Species distribution
+With the help of colors in the chart, it is easy to distinguish one view from another by looking at the placement of points.
+### Variability Analysis
+Diagrams allow you to estimate how much the characteristics of flowers vary within the same species. A small spread of dots indicates homogeneity, and a large one indicates diversity.
+### Search for exceptions
+Dots that emerge from the crowd may indicate unusual individuals or errors in the data.
+### Preparing for the simulation
+Before building predictive models, scatter plots help determine which characteristics should be used and whether they need to be normalized.
+These charts provide valuable information in an easily understandable manner, which helps you see the big picture and the specifics of the data.
 
+### Examples 1
+!["Examples 1"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/Sepal length(cm)_vs_Petal length(cm)_scatter.png?raw=true)
 
+### Examples 2
+!["Examples 2"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/Sepal length(cm)_vs_Sepal width(cm)_scatter.png?raw=true)
+
+## 3D Plot Visualisation
+
+A 3D visualization of the Iris dataset using a scatter plot helps us understand how different sizes of iris flowers relate to each other. The following are the key aspects that can be extracted from this visualization.
+
+!["3D Plot Visualisation"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/3D Scatter Plot of Iris Dataset.png?raw=true)
+
+### Understanding Relationships
+This 3D diagram helps you see the relationships between the length and width of the sepal and the length of the petal. For example, large petals usually correspond to large sepals.
+
+### Identification of groups
+The different colors in the diagram make it easy to distinguish between the types of irises. This highlights that physical characteristics can help in the classification of plants.
+
+### Searching for anomalies
+If some points don't fit into the overall distribution, it could mean errors in the data or unusual cases that are worth further investigating.
+
+### Multivariate Analysis
+Visualizing three dimensions at the same time provides more information than simple charts, allowing for a better understanding of the relationships in the data.
+
+### Choice of characteristics for models
+This analysis helps determine which features are best used to build predictive models to improve their accuracy.
+
+This 3D visualization is a powerful tool for data analysis that helps to identify major trends and features in complex biological data.
 
 ## Goals
 - To accurately segment iris into distinct clusters
