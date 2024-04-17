@@ -111,9 +111,11 @@ The data type of each column in a DataFrame greatly affects what operations can 
 ### Advantages of Converting to Category Data Type
 Memory Efficiency: Using the category data type, which internally maps categories to integers, generally consumes less memory than string types, particularly when there are few unique categories compared to the total data points.
 
-Performance Enhancement: Categorical data speeds up operations like groupby, sorting, and other vectorized functions, compared to string data.
+#### Performance Enhancement
+Categorical data speeds up operations like groupby, sorting, and other vectorized functions, compared to string data.
 
-Semantic Clarity: By converting a column to categorical data type, it explicitly indicates that the data can only take on a set number of distinct categories, improving code readability and understanding.
+#### Semantic Clarity
+By converting a column to categorical data type, it explicitly indicates that the data can only take on a set number of distinct categories, improving code readability and understanding.
 
 ## Missing data
 After analysis Itis DataFraim, it was found that the lost data is completely absent in this Network. Further cleaning of the data at this stage is not required and is not logical from the point of view of data processing performance.
@@ -123,40 +125,74 @@ This code exports the data to the file iris_summary.txt, which contains summary 
 The file iris_summary.txt will contain the following information for each variable.
 
 ## Histogram
-Create and save histograms for each variable from a known Iris data set. 
-The Iris data set contains 150 specimens with 4 characteristics: length and width of sepals, length and width of petals. These data are divided into three classes corresponding to iris types: Setosa, Versicolour and Virginica.
+Each variable (length and width of sepals, length and width of petals) is studied separately in order to identify the distributions, features, and differences between the three iris species.
 
-### Examples 1
-!["Examples 1"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/Petal_width(cm).png?raw=true)
+### Sepal Length
+The sepal length histogram shows that most flowers have sepal lengths of 5 to 7 cm. The distribution is bimodal in nature, which may indicate the presence of two main groups of plants with different average values for the length of the sepals. This indicates that there may be significant physical differences between species.
 
-### Examples 2
-!["Examples 2"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/Sepal_width(cm).png?raw=true)
+!["Sepal Length"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/Sepal_length(cm).png?raw=true)
+
+### Sepal Width
+The histogram of the width of the sepals shows a bell-shaped distribution typical of a normal distribution. Most values are concentrated in the range of 2.5 to 3.5 cm. This distribution is symmetrical, with an average value of about 3 cm. This indicates that there is no significant difference in the width of the sepals between iris species.
+
+!["Sepal Width"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/Sepal_width(cm).png?raw=true)
+
+### Petal Length
+The histogram of the length of the petals shows a clear division into two groups: one of them (value up to 2 cm) corresponds to Iris setosa, which has much shorter petals, and the other (value over 3 cm) to Iris versicolor and Iris virginica. This distribution makes it possible to effectively distinguish Iris setosa from other species with just one variable.
+
+!["Petal Length"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/Petal_length(cm).png?raw=true)
+
+### Petal Width
+The similarity of the petal width histogram to the petal length histogram confirms that the petal width is also an important differentiating parameter. Iris setosa has significantly narrower petals (up to 0.6 cm), while Iris versicolor and Iris virginica have wider petals.
+
+!["Petal Width"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/Petal_width(cm).png?raw=true)
+
+### Conclusions
+Histograms provide visual confirmation that different iris species can be distinguished from each other by morphological characteristics. In particular, Iris setosa is easily distinguished by the length and width of its petals. Also, histograms reveal general distributions for each variable, which can be useful for further statistical processing and machine learning, in particular, for the selection of classification and clustering methods.
 
 ## Scatter Plots
-Scatter plots based on the Iris dataset help analyze the relationships between the sizes of the flower parts of three species of irises. The following are the main ones that can be explored with the help of these diagrams.
-### Detection Dependencies 
-These charts show how different measurements are related to each other, such as the length and width of the petals. The linear alignment of the dots on the chart indicates a strong correlation between these characteristics.
-### Species distribution
-With the help of colors in the chart, it is easy to distinguish one view from another by looking at the placement of points.
-### Variability Analysis
-Diagrams allow you to estimate how much the characteristics of flowers vary within the same species. A small spread of dots indicates homogeneity, and a large one indicates diversity.
-### Search for exceptions
-Dots that emerge from the crowd may indicate unusual individuals or errors in the data.
-### Preparing for the simulation
-Before building predictive models, scatter plots help determine which characteristics should be used and whether they need to be normalized.
-These charts provide valuable information in an easily understandable manner, which helps you see the big picture and the specifics of the data.
+For each pair of iris flower characteristics, scatter plots have been created to help analyze and understand the relationships between the sizes of different parts of the flower. 
 
-### Examples 1
-!["Examples 1"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/Sepal length(cm)_vs_Petal length(cm)_scatter.png?raw=true)
+### Sepal width(cm) vs Petal width(cm)
+Sepal width and petal width show only slight scattering, which may indicate a weak relationship between these measurements.
 
-### Examples 2
-!["Examples 2"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/Sepal length(cm)_vs_Sepal width(cm)_scatter.png?raw=true)
+!["Sepal width(cm) vs Petal width(cm)"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/Sepal%20width(cm)_vs_Petal%20width(cm)_scatter.png?raw=true)
+
+### Sepal width(cm) vs Petal length(cm)
+Between the width of the sepal and the length of the petal, there is a slight tendency towards a connection, but it is not pronounced.
+
+!["Sepal width(cm) vs Petal length(cm)"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/Sepal%20width(cm)_vs_Petal%20length(cm)_scatter.png?raw=true)
+
+### Sepal length(cm) vs Sepal width(cm)
+Sepal length and width often show a weak to moderate correlation, suggesting relationships between these parameters.
+
+!["Sepal length(cm) vs Sepal width(cm)"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/Sepal%20length(cm)_vs_Sepal%20width(cm)_scatter.png?raw=true)
+
+### Sepal length(cm) vs Petal width(cm)
+The moderate relationship between the length of the sepal and the width of the petal indicates a possible relationship between these sizes.
+
+!["Sepal length(cm) vs Petal width(cm)"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/Sepal%20length(cm)_vs_Petal%20width(cm)_scatter.png?raw=true)
+
+### Sepal length(cm) vs Petal length(cm)
+The strong and clear relationship between the length of the sepal and the length of the petal stands out as a clear trend, confirming the high correlation.
+
+!["Sepal length(cm) vs Petal length(cm)"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/Sepal%20length(cm)_vs_Petal%20length(cm)_scatter.png?raw=true)
+
+### Petal length(cm) vs Petal width(cm)
+The very high correlation between the length and width of the petal is manifested in a distinct linear relationship, which makes these parameters key to determining the type of iris.
+
+!["Petal length(cm) vs Petal width(cm)"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/Sepal%20length(cm)_vs_Petal%20width(cm)_scatter.png?raw=true)
+
+### Conclusions
+These scatter plots provide important information about the relationships between iris characteristics, which aids in the identification of physical characteristics that easily distinguish species, which is important for systematic botany. Additionally, it is possible to visually assess which characteristics are strongly related can help in the development of biological and ecological models. Identifying points that go beyond general trends can indicate errors in the data or unique biological features.
+
+In summary, scatter plots offer a visual foundation for detailed analysis and decision-making in practical contexts, enhancing understanding of complex dataset characteristics like those found in the Iris dataset.
 
 ## 3D Plot Visualisation
 
 A 3D visualization of the Iris dataset using a scatter plot helps us understand how different sizes of iris flowers relate to each other. The following are the key aspects that can be extracted from this visualization.
 
-!["3D Plot Visualisation"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/3D Scatter Plot of Iris Dataset.png?raw=true)
+!["3D Plot Visualisation"](https://github.com/ShamansIT/Data_Analytics_Iris_Research/blob/main/images/3D%20Scatter%20Plot%20of%20Iris%20Dataset.png?raw=true)
 
 ### Understanding Relationships
 This 3D diagram helps you see the relationships between the length and width of the sepal and the length of the petal. For example, large petals usually correspond to large sepals.
@@ -173,6 +209,7 @@ Visualizing three dimensions at the same time provides more information than sim
 ### Choice of characteristics for models
 This analysis helps determine which features are best used to build predictive models to improve their accuracy.
 
+### Conclusions
 This 3D visualization is a powerful tool for data analysis that helps to identify major trends and features in complex biological data.
 
 ## Goals
