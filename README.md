@@ -118,6 +118,10 @@ Semantic Clarity: By converting a column to categorical data type, it explicitly
 ## Missing data
 After analysis Itis DataFraim, it was found that the lost data is completely absent in this Network. Further cleaning of the data at this stage is not required and is not logical from the point of view of data processing performance.
 
+## Save Data in File
+This code exports the data to the file iris_summary.txt, which contains summary information about each of the attributes of the Iris dataset.
+The file iris_summary.txt will contain the following information for each variable.
+
 ## Layout Plot
 
 ### Distribution of 
