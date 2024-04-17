@@ -122,10 +122,19 @@ After analysis Itis DataFraim, it was found that the lost data is completely abs
 This code exports the data to the file iris_summary.txt, which contains summary information about each of the attributes of the Iris dataset.
 The file iris_summary.txt will contain the following information for each variable.
 
+## Histogram
+Create and save histograms for each variable from a known Iris data set. 
+The Iris data set contains 150 specimens with 4 characteristics: length and width of sepals, length and width of petals. These data are divided into three classes corresponding to iris types: Setosa, Versicolour and Virginica.
+
+### Examples 1
+!["Examples 1"](https://github.com/ShamansIT)
+
+### Examples 2
+!["Examples 2"](https://github.com/ShamansIT)
+
 ## Layout Plot
 
-### Distribution of 
-!["Distribution of "](https://github.com/ShamansIT)
+
 
 ## Goals
 - To accurately segment iris into distinct clusters
